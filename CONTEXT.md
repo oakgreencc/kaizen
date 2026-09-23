@@ -29,8 +29,12 @@ Where a lesson lives so future sessions act on it: a memory, a CLAUDE.md line, a
 _Avoid_: home, destination
 
 **Ladder**:
-The ordering of placements from advisory (memory) to enforced (hook, script); a lesson is **promoted** when it moves up.
+The ordering of placements by strength: a memory (only its index line is always in context), then an instructions file line (CLAUDE.md or AGENTS.md, always in context), then an enforced placement (hook, permission rule, script). A lesson is **promoted** when it moves up. Scope is a separate axis: moving to user level is a lift, not a promotion.
 _Avoid_: hierarchy, escalation
+
+**Lift**:
+Moving a lesson from one repository's placements to the user level (user CLAUDE.md), because it holds across repositories. Changes who the lesson applies to, not how strongly.
+_Avoid_: promote (that is strength), widen (that is fixing a too-narrow wording)
 
 **Memory**:
 One placement: a feedback file in Claude Code's auto-memory directory. A memory holds a lesson; it is not the lesson.
@@ -51,6 +55,14 @@ _Avoid_: hook failure
 **Diagnosis**:
 Why a relapse happened: **unseen** (the placement likely wasn't in context), **ignored** (in context, clear, and disobeyed), **unclear** (the wording let the agent off) or **too narrow** (the agent followed the wording, but the lesson is broader).
 _Avoid_: root cause, reason
+
+**Candidate**:
+A lesson seen in findings but not yet placed; the ledger keeps only a one-line gist. It expires after 90 observed days with no new finding.
+_Avoid_: draft, pending lesson
+
+**Coverage gap**:
+A stretch of time no run reviewed in full, because transcripts were deleted before a run read them or only partial-scope runs covered it. Those days are not observed, so they don't count toward expiry.
+_Avoid_: blind spot, missing data
 
 **Ledger**:
 Kaizen's private record of which placements it made or adopted, when, and which findings back them — plus one-line gists of candidate lessons not yet placed. Holds no lesson content: the lesson lives only in its placement, where other agents look. Out of agents' sight, safe to rebuild from the placements.
