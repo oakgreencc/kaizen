@@ -1,0 +1,15 @@
+{
+  "name": "claude-kaizen",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Development tooling for the kaizen Claude Code skill. The skill itself has no dependencies.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "test": "node --test 'test/*.test.mjs'",
+    "validate": "claude plugin validate ."
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
