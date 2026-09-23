@@ -1,0 +1,14 @@
+{
+  "name": "kaizen",
+  "description": "Kaizen: a session-retrospective skill for Claude Code.",
+  "owner": {
+    "name": "James Loosli"
+  },
+  "plugins": [
+    {
+      "name": "kaizen",
+      "source": "./",
+      "description": "Session retrospective: corrections, friction and throwaway scripts from your transcripts become feedback memories and a dated report."
+    }
+  ]
+}

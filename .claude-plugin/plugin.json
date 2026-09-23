@@ -1,0 +1,10 @@
+{
+  "name": "kaizen",
+  "version": "0.1.0",
+  "description": "Session retrospective for Claude Code: finds corrections, friction and rewritten throwaway scripts in your transcripts, saves recurring lessons as feedback memories, and writes a dated report.",
+  "author": { "name": "James Loosli", "url": "https://github.com/jamesloosli" },
+  "homepage": "https://github.com/oakgreencc/kaizen",
+  "repository": "https://github.com/oakgreencc/kaizen",
+  "license": "AGPL-3.0-only",
+  "keywords": ["retrospective", "memory", "feedback", "transcripts", "continuous-improvement"]
+}
