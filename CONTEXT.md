@@ -37,8 +37,20 @@ One placement: a feedback file in Claude Code's auto-memory directory. A memory 
 _Avoid_: using "memory" to mean the lesson itself
 
 **Relapse**:
-A finding that matches a lesson which was already placed before the session began — evidence the placement is not working.
+A finding where the agent did what a placement says not to do, while that placement was already in force when the session loaded its context (at its start, or at its resume point). Evidence the placement is not working. A finding that only matches an unplaced candidate is a recurrence, not a relapse.
 _Avoid_: regression, repeat
+
+**Possible relapse**:
+A finding that resembles a placed lesson but can't name the clause it breaks or show the same behaviour. It is reported but not counted.
+_Avoid_: soft relapse, near-miss
+
+**Enforcement gap**:
+A relapse against an enforced placement (a hook, permission rule or script): the enforcement was bypassed or too narrow, or the agent improvised the script again.
+_Avoid_: hook failure
+
+**Diagnosis**:
+Why a relapse happened: **unseen** (the placement likely wasn't in context), **ignored** (in context, clear, and disobeyed), **unclear** (the wording let the agent off) or **too narrow** (the agent followed the wording, but the lesson is broader).
+_Avoid_: root cause, reason
 
 **Ledger**:
 Kaizen's private record of which placements it made or adopted, when, and which findings back them — plus one-line gists of candidate lessons not yet placed. Holds no lesson content: the lesson lives only in its placement, where other agents look. Out of agents' sight, safe to rebuild from the placements.
