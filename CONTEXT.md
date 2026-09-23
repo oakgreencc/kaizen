@@ -12,6 +12,10 @@ _Avoid_: conversation, chat, transcript (the file, not the thing)
 One invocation of `/kaizen`, covering the sessions since the previous run in the same scope.
 _Avoid_: retrospective, retro, pass
 
+**Checkpoint**:
+The point in time the last run covered; the next run reads only sessions after it.
+_Avoid_: last run date, watermark
+
 **Finding**:
 A single observation about one session — a correction, quality gap, convention miss, friction, positive pattern, or script that should be permanent.
 _Avoid_: issue, signal (a signal is only a lexical hint that a finding may exist)
@@ -35,3 +39,7 @@ _Avoid_: using "memory" to mean the lesson itself
 **Relapse**:
 A finding that matches a lesson which was already placed before the session began — evidence the placement is not working.
 _Avoid_: regression, repeat
+
+**Ledger**:
+Kaizen's private record of which placements it made or adopted, when, and which findings back them — plus one-line gists of candidate lessons not yet placed. Holds no lesson content: the lesson lives only in its placement, where other agents look. Out of agents' sight, safe to rebuild from the placements.
+_Avoid_: memory, lesson store, checkpoint
