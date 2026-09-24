@@ -36,9 +36,29 @@ _Avoid_: hierarchy, escalation
 Moving a lesson from one repository's placements to the user level (user CLAUDE.md), because it holds across repositories. Changes who the lesson applies to, not how strongly.
 _Avoid_: promote (that is strength), widen (that is fixing a too-narrow wording)
 
+**Proposal**:
+A placement kaizen has drafted but not written, waiting for the human to apply or reject it. It carries across runs, under one identity per lesson and target, until one of those happens.
+_Avoid_: suggestion, draft
+
+**Rejection**:
+The human's explicit no — to one proposal (not this placement) or to a lesson (don't place it at all). Removing a placement kaizen made counts as rejecting it. It holds until enough new evidence resurfaces it, and the bar rises each time it is rejected again. Silence is not a rejection.
+_Avoid_: dismissal, veto
+
+**Review**:
+A sitting, separate from a run, where the human goes through pending proposals and applies or rejects each one.
+_Avoid_: approval, triage
+
 **Memory**:
 One placement: a feedback file in Claude Code's auto-memory directory. A memory holds a lesson; it is not the lesson.
 _Avoid_: using "memory" to mean the lesson itself
+
+**Hygiene**:
+Housekeeping over a memory directory: keeping its index in sync with its files and within the loading limit, and finding memories that duplicate, contradict or refer to things that no longer exist. It acts on placements; it touches a lesson's identity only when merging two memories that hold the same lesson.
+_Avoid_: cleanup, lint
+
+**Redaction**:
+Replacing a secret in transcript or placement text with a `[redacted:<rule>]` marker before the model reads it, so nothing kaizen writes can carry it. A redaction is evidence a secret sits in plaintext in a transcript; it is reported, never turned into a lesson.
+_Avoid_: scrubbing, masking, removal
 
 **Relapse**:
 A finding where the agent did what a placement says not to do, while that placement was already in force when the session loaded its context (at its start, or at its resume point). Evidence the placement is not working. A finding that only matches an unplaced candidate is a recurrence, not a relapse.
